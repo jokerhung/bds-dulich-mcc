@@ -8,7 +8,11 @@ interface ChatMessage {
   sources?: string[];
 }
 
-export default function ChatWidget() {
+interface ChatWidgetProps {
+  hideHeader?: boolean;
+}
+
+export default function ChatWidget({ hideHeader }: ChatWidgetProps = {}) {
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
@@ -48,7 +52,9 @@ export default function ChatWidget() {
 
   return (
     <div className="flex h-full flex-col border-l border-black/10">
-      <div className="border-b border-black/10 p-3 font-semibold">Chợ Mù - Trợ lý du lịch</div>
+      {!hideHeader && (
+        <div className="border-b border-black/10 p-3 font-semibold">Chợ Mù - Trợ lý du lịch</div>
+      )}
 
       <div className="flex-1 space-y-3 overflow-y-auto p-3">
         {messages.map((m, i) => (

@@ -2,14 +2,7 @@ import * as XLSX from "xlsx";
 import { writeFileSync } from "fs";
 import type { Poi, PoiCategory } from "../src/types/poi";
 
-const VALID_CATEGORIES: PoiCategory[] = [
-  "ruong_bac_thang",
-  "diem_ngam_canh",
-  "homestay",
-  "nha_hang",
-  "le_hoi",
-  "dac_san",
-];
+const VALID_CATEGORIES: PoiCategory[] = ["diem_ngam_canh", "homestay", "nha_hang"];
 
 function isValidCategory(value: unknown): value is PoiCategory {
   return (

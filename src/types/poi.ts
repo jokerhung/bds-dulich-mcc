@@ -1,10 +1,4 @@
-export type PoiCategory =
-  | "ruong_bac_thang"
-  | "diem_ngam_canh"
-  | "homestay"
-  | "nha_hang"
-  | "le_hoi"
-  | "dac_san";
+export type PoiCategory = "diem_ngam_canh" | "homestay" | "nha_hang";
 
 export interface Poi {
   id: string;

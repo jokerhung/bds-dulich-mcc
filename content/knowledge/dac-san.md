@@ -3,12 +3,24 @@ title: Đặc sản Mù Cang Chải
 tags: [dac-san, am-thuc, mon-an, dac-sac]
 ---
 
-Ẩm thực Mù Cang Chải mang đậm bản sắc của người Mông và các dân tộc vùng cao Tây Bắc:
+# Đặc Sản Mù Cang Chải (Yên Bái) - Hương Vị Núi Rừng Tây Bắc
 
-- **Xôi ngũ sắc:** xôi được nhuộm màu tự nhiên từ các loại lá cây rừng, tạo thành 5 màu (đỏ, xanh, tím, vàng, trắng), thường xuất hiện trong các dịp lễ, chợ phiên.
-- **Cơm lam:** gạo nếp được cho vào ống nứa/ống tre rồi nướng trên lửa, giữ được vị thơm đặc trưng, thường ăn kèm muối vừng hoặc thịt nướng.
-- **Gà đen (gà bản):** gà nuôi thả tự nhiên của người Mông, thịt chắc, thường được chế biến thành các món nướng, hấp, hoặc nấu với các loại rau rừng.
-- **Lợn cắp nách:** lợn bản nuôi thả rông, kích thước nhỏ, thịt thơm, thường được chế biến thành các món nướng hoặc hấp.
-- **Rau rừng:** các loại rau đặc trưng của vùng núi, thường ăn kèm trong các bữa cơm tại homestay hoặc quán ăn địa phương.
+Mù Cang Chải không chỉ nổi tiếng với những thửa ruộng bậc thang kỳ vĩ mà còn sở hữu một nền ẩm thực vô cùng phong phú, mang đậm bản sắc văn hóa của đồng bào các dân tộc vùng cao.
 
-Các món ăn trên có thể tìm thấy tại các quán ăn địa phương ở thị trấn Mù Cang Chải, tại các homestay (thường phục vụ theo bữa/theo yêu cầu đặt trước), hoặc trong các gian hàng ẩm thực vào dịp chợ phiên, lễ hội. Giá cả cụ thể có thể khác nhau giữa các quán, nên hỏi giá trước khi dùng.
+## 1. Các món ăn đặc sản nhất định phải thử tại Mù Cang Chải
+
+*   **Cốm Tú Lệ:** Được làm từ giống nếp tan đặc sản tại thung lũng Tú Lệ. Hạt cốm có màu xanh ngọc, dẻo thơm và mang vị ngọt thanh tự nhiên.
+*   **Xôi ngũ sắc:** Món ăn truyền thống của người Thái. Xôi được nhuộm màu hoàn toàn tự nhiên từ các loại lá cây rừng (đỏ, tím, vàng, xanh, trắng), thường ăn kèm với gà đồi nướng.
+*   **Pa Pỉnh Tộp (Cá suối nướng):** Cá suối tươi được mổ dọc sống lưng, tẩm ướp với mắc khén, hạt dổi, gừng, sả và các loại rau thơm rồi gập đôi lại nướng trên than hồng.
+*   **Nhộng ong rừng:** Món ăn đặc sản vào mùa thu (khoảng tháng 8 - tháng 9). Nhộng ong béo ngậy thường được xào với lá chanh hoặc măng chua.
+*   **Mèn mén và Thắng cố:** Đây là hai món ăn mang đậm bản sắc của người H'Mông. Mèn mén là bột ngô tẻ đồ chín, còn Thắng cố là món canh nấu từ thịt và nội tạng ngựa/bò cùng nhiều loại gia vị đặc trưng.
+*   **Gà đen đồi:** Giống gà xương đen, thịt chắc, ít mỡ và rất thơm ngọt. Gà đen thường được nướng mật ong hoặc đem tần thuốc bắc để bồi bổ sức khỏe.
+*   **Cá hồi, cá tầm Khau Phạ:** Nhờ nguồn nước lạnh quanh năm dưới chân đèo Khau Phạ, các nhà hàng tại đây phục vụ lẩu cá hồi, cá tầm tươi sống rất ngon và chất lượng.
+
+## 2. Đặc sản Mù Cang Chải mua về làm quà
+
+*   **Thịt trâu gác bếp:** Thịt trâu tươi được chọn lọc kỹ, tẩm ướp gia vị Tây Bắc rồi hun khói bằng củi gỗ rừng. Khi ăn xé nhỏ chấm cùng chẩm chéo.
+*   **Mật ong rừng tự nhiên:** Mật ong được người dân bản địa khai thác trực tiếp từ rừng sâu, có màu vàng sậm, đặc sánh và mùi thơm nồng.
+*   **Lạp xưởng hun khói:** Lạp xưởng làm từ thịt lợn bản, nhồi thủ công và hun khói bằng bã mía cùng củi tạo nên hương vị đặc trưng, để được rất lâu.
+*   **Măng nứa và nấm hương rừng:** Được người dân hái trong rừng sâu rồi phơi khô tự nhiên. Đây là món quà rất thiết thực, dễ bảo quản và mang đậm hương vị núi rừng.
+
