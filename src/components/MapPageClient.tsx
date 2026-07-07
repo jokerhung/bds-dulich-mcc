@@ -54,14 +54,14 @@ export default function MapPageClient({ pois }: MapPageClientProps) {
         <PoiDetailCard poi={selectedPoi} onClose={() => setSelectedPoi(null)} />
       </div>
 
-      <div className="flex w-96 flex-col">
+      <div className="flex min-h-0 w-96 flex-col">
         <div className="flex items-center justify-between border-b border-black/10 p-3">
           <span className="font-semibold">Chợ Mù - Trợ lý du lịch</span>
           <button onClick={handleLogout} className="text-xs text-black/40 hover:text-black">
             Đăng xuất
           </button>
         </div>
-        <div className="flex-1">
+        <div className="min-h-0 flex-1">
           <ChatWidget hideHeader />
         </div>
       </div>

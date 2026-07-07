@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import ReactMarkdown from "react-markdown";
 
 interface ChatMessage {
   role: "user" | "assistant";
@@ -51,20 +52,26 @@ export default function ChatWidget({ hideHeader }: ChatWidgetProps = {}) {
   }
 
   return (
-    <div className="flex h-full flex-col border-l border-black/10">
+    <div className="flex h-full min-h-0 flex-col border-l border-black/10">
       {!hideHeader && (
         <div className="border-b border-black/10 p-3 font-semibold">Chợ Mù - Trợ lý du lịch</div>
       )}
 
-      <div className="flex-1 space-y-3 overflow-y-auto p-3">
+      <div className="min-h-0 flex-1 space-y-3 overflow-y-auto p-3">
         {messages.map((m, i) => (
           <div key={i} className={m.role === "user" ? "text-right" : "text-left"}>
             <div
-              className={`inline-block max-w-[85%] rounded-lg px-3 py-2 text-sm ${
+              className={`inline-block max-w-[85%] rounded-lg px-3 py-2 text-left text-sm ${
                 m.role === "user" ? "bg-black text-white" : "bg-black/5"
               }`}
             >
-              {m.content}
+              {m.role === "assistant" ? (
+                <div className="space-y-2 [&_ol]:list-decimal [&_ol]:pl-5 [&_strong]:font-semibold [&_ul]:list-disc [&_ul]:pl-5">
+                  <ReactMarkdown>{m.content}</ReactMarkdown>
+                </div>
+              ) : (
+                m.content
+              )}
             </div>
             {m.sources && m.sources.length > 0 && (
               <div className="mt-1 text-xs text-black/40">
