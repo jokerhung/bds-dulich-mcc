@@ -6,6 +6,7 @@ import type { Poi, PoiCategory } from "@/types/poi";
 import MapView from "./MapView";
 import MapLegend from "./MapLegend";
 import PoiDetailCard from "./PoiDetailCard";
+import PoiSearchBox from "./PoiSearchBox";
 import ChatWidget from "./ChatWidget";
 
 interface MapPageClientProps {
@@ -36,6 +37,11 @@ export default function MapPageClient({ pois }: MapPageClientProps) {
     });
   }
 
+  function handleSelectFromSearch(poi: Poi) {
+    setActiveCategories((prev) => (prev.has(poi.category) ? prev : new Set(prev).add(poi.category)));
+    setSelectedPoi(poi);
+  }
+
   async function handleLogout() {
     await fetch("/api/auth/logout", { method: "POST" });
     router.push("/login");
@@ -46,6 +52,7 @@ export default function MapPageClient({ pois }: MapPageClientProps) {
     <div className="flex h-screen w-full">
       <div className="relative flex-1">
         <MapView pois={visiblePois} selectedPoi={selectedPoi} onSelectPoi={setSelectedPoi} />
+        <PoiSearchBox pois={pois} onSelectPoi={handleSelectFromSearch} />
         <MapLegend
           pois={pois}
           activeCategories={activeCategories}

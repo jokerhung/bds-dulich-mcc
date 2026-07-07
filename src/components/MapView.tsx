@@ -1,6 +1,7 @@
 "use client";
 
-import { Map, Marker, Popup } from "react-map-gl/mapbox";
+import { useEffect, useRef } from "react";
+import { Map, Marker, Popup, type MapRef } from "react-map-gl/mapbox";
 import type { Poi } from "@/types/poi";
 import { CATEGORY_COLORS } from "@/lib/categoryColors";
 
@@ -38,6 +39,18 @@ interface MapViewProps {
 }
 
 export default function MapView({ pois, selectedPoi, onSelectPoi }: MapViewProps) {
+  const mapRef = useRef<MapRef>(null);
+
+  useEffect(() => {
+    if (selectedPoi) {
+      mapRef.current?.flyTo({
+        center: [selectedPoi.lng, selectedPoi.lat],
+        zoom: 14,
+        duration: 800,
+      });
+    }
+  }, [selectedPoi]);
+
   if (!MAP_CONFIG.accessToken) {
     return (
       <div className="flex h-full w-full items-center justify-center bg-black/5 p-6 text-center text-sm text-black/60">
@@ -48,6 +61,7 @@ export default function MapView({ pois, selectedPoi, onSelectPoi }: MapViewProps
 
   return (
     <Map
+      ref={mapRef}
       mapboxAccessToken={MAP_CONFIG.accessToken}
       initialViewState={{
         longitude: 104.1,

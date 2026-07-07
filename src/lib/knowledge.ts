@@ -1,6 +1,7 @@
 import { readFileSync, readdirSync } from "fs";
 import path from "path";
 import matter from "gray-matter";
+import { stripDiacritics } from "./text";
 
 const KNOWLEDGE_DIR = path.join(process.cwd(), "content", "knowledge");
 const FALLBACK_SLUG = "tong-quan";
@@ -11,14 +12,6 @@ interface KnowledgeDoc {
   title: string;
   tags: string[];
   content: string;
-}
-
-function stripDiacritics(text: string): string {
-  return text
-    .normalize("NFD")
-    .replace(/[̀-ͯ]/g, "")
-    .replace(/đ/g, "d")
-    .replace(/Đ/g, "D");
 }
 
 function tokenize(text: string): string[] {

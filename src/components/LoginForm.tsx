@@ -37,7 +37,7 @@ export default function LoginForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex w-full max-w-sm flex-col gap-4 rounded-lg border border-black/10 p-6"
+      className="flex w-full max-w-sm flex-col gap-4 rounded-lg border border-black/10 bg-white/90 p-6 shadow-xl backdrop-blur-sm"
     >
       <h1 className="text-xl font-semibold">Đăng nhập</h1>
       <div className="flex flex-col gap-1">
