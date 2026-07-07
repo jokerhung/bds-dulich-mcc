@@ -1,7 +1,7 @@
 [
   {
     "id": "poi_001",
-    "name": "Đồi Mâm Xôi",
+    "name": "Ruộng bậc thang Mâm Xôi",
     "category": "diem_ngam_canh",
     "commune": "La Pán Tẩn",
     "lat": 21.7929590730264,
@@ -49,7 +49,7 @@
   },
   {
     "id": "poi_005",
-    "name": "Vành Móng ngựa",
+    "name": "Ruộng bậc thang Vành Móng ngựa",
     "category": "diem_ngam_canh",
     "commune": "Thị Trấn Mù Cang Chải",
     "lat": 21.84951549840542,
