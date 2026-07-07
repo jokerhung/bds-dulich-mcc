@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx --yes create-next-app@latest . --typescript --tailwind --app --eslint --src-dir --import-alias \"@/*\" --use-npm --yes)",
+      "Read(//d/jkhung/work/investigate/**)",
+      "Bash(rm -rf _scaffold_tmp)",
+      "Bash(npx --yes create-next-app@latest _scaffold_tmp --typescript --tailwind --app --eslint --src-dir --import-alias \"@/*\" --use-npm)",
+      "Bash(rm -rf scaffold-tmp)",
+      "Bash(npx --yes create-next-app@latest scaffold-tmp --typescript --tailwind --app --eslint --src-dir --import-alias \"@/*\" --use-npm)"
+    ]
+  }
+}
