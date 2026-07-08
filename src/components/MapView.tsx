@@ -1,9 +1,12 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { Fragment, useEffect, useRef, useState } from "react";
 import { Map, Marker, Popup, type MapRef } from "react-map-gl/mapbox";
 import type { Poi } from "@/types/poi";
 import { CATEGORY_COLORS } from "@/lib/categoryColors";
+
+// Từ mức zoom này trở lên mới hiện tên địa điểm dưới marker, tránh rối bản đồ khi zoom xa.
+const LABEL_MIN_ZOOM = 13;
 
 // "mapbox" dùng Mapbox GL JS + style của Mapbox (mapbox://...).
 // "goong" dùng Goong Maptiles (nhà cung cấp bản đồ Việt Nam), style JSON tương thích
@@ -40,6 +43,7 @@ interface MapViewProps {
 
 export default function MapView({ pois, selectedPoi, onSelectPoi }: MapViewProps) {
   const mapRef = useRef<MapRef>(null);
+  const [zoom, setZoom] = useState(11);
 
   useEffect(() => {
     if (selectedPoi) {
@@ -70,18 +74,27 @@ export default function MapView({ pois, selectedPoi, onSelectPoi }: MapViewProps
       }}
       style={{ width: "100%", height: "100%" }}
       mapStyle={MAP_CONFIG.mapStyle}
+      onZoom={(e) => setZoom(e.viewState.zoom)}
     >
       {pois.map((poi) => (
-        <Marker
-          key={poi.id}
-          longitude={poi.lng}
-          latitude={poi.lat}
-          color={CATEGORY_COLORS[poi.category]}
-          onClick={(e) => {
-            e.originalEvent.stopPropagation();
-            onSelectPoi(poi);
-          }}
-        />
+        <Fragment key={poi.id}>
+          <Marker
+            longitude={poi.lng}
+            latitude={poi.lat}
+            color={CATEGORY_COLORS[poi.category]}
+            onClick={(e) => {
+              e.originalEvent.stopPropagation();
+              onSelectPoi(poi);
+            }}
+          />
+          {zoom >= LABEL_MIN_ZOOM && (
+            <Marker longitude={poi.lng} latitude={poi.lat} anchor="top" offset={[0, 2]}>
+              <span className="pointer-events-none whitespace-nowrap rounded bg-white/90 px-1.5 py-0.5 text-[11px] font-medium shadow">
+                {poi.name}
+              </span>
+            </Marker>
+          )}
+        </Fragment>
       ))}
 
       {selectedPoi && (
