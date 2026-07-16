@@ -41,9 +41,38 @@ interface MapViewProps {
   onSelectPoi: (poi: Poi | null) => void;
 }
 
+// View mặc định (trung tâm Sa Pa) khi chưa có POI nào để fit bounds.
+const DEFAULT_VIEW = { longitude: 103.84, latitude: 22.33, zoom: 11 };
+
+// Tính khung bao phủ toàn bộ POI để bản đồ mở lên là thấy hết các địa điểm.
+function computeInitialViewState(pois: Poi[]) {
+  if (pois.length === 0) {
+    return DEFAULT_VIEW;
+  }
+  let minLng = pois[0].lng;
+  let maxLng = pois[0].lng;
+  let minLat = pois[0].lat;
+  let maxLat = pois[0].lat;
+  for (const poi of pois) {
+    if (poi.lng < minLng) minLng = poi.lng;
+    if (poi.lng > maxLng) maxLng = poi.lng;
+    if (poi.lat < minLat) minLat = poi.lat;
+    if (poi.lat > maxLat) maxLat = poi.lat;
+  }
+  return {
+    bounds: [
+      [minLng, minLat],
+      [maxLng, maxLat],
+    ] as [[number, number], [number, number]],
+    fitBoundsOptions: { padding: 60, maxZoom: 13 },
+  };
+}
+
 export default function MapView({ pois, selectedPoi, onSelectPoi }: MapViewProps) {
   const mapRef = useRef<MapRef>(null);
   const [zoom, setZoom] = useState(11);
+  // Chỉ tính một lần lúc mount — initialViewState không có tác dụng sau khi map đã khởi tạo.
+  const [initialViewState] = useState(() => computeInitialViewState(pois));
 
   useEffect(() => {
     if (selectedPoi) {
@@ -67,11 +96,7 @@ export default function MapView({ pois, selectedPoi, onSelectPoi }: MapViewProps
     <Map
       ref={mapRef}
       mapboxAccessToken={MAP_CONFIG.accessToken}
-      initialViewState={{
-        longitude: 104.1,
-        latitude: 21.85,
-        zoom: 11,
-      }}
+      initialViewState={initialViewState}
       style={{ width: "100%", height: "100%" }}
       mapStyle={MAP_CONFIG.mapStyle}
       onZoom={(e) => setZoom(e.viewState.zoom)}

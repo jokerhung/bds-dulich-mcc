@@ -1,8 +1,8 @@
 import type { PoiCategory } from "@/types/poi";
 
 export const CATEGORY_LABELS: Record<PoiCategory, string> = {
-  diem_ngam_canh: "Điểm ngắm cảnh",
-  homestay: "Homestay",
+  diem_ngam_canh: "Điểm du lịch",
+  homestay: "Khách Sạn/Homestay",
   nha_hang: "Nhà hàng",
 };
 

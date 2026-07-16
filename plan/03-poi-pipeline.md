@@ -1,13 +1,13 @@
 # Giai đoạn 3 — POI pipeline (Excel → JSON → API)
 
 ## Mục tiêu
-`data/poi.xlsx` mẫu với dữ liệu thật về Mù Cang Chải, import ra `data/poi.json` hợp lệ,
+`data/poi.xlsx` mẫu với dữ liệu thật về Sa Pa, import ra `data/poi.json` hợp lệ,
 `GET /api/poi` trả đúng dữ liệu và filter được.
 
 ## Việc làm
 
-1. Tạo `data/poi.xlsx`, sheet tên `POI`, 5–10 dòng dữ liệu thật (tọa độ thật khu vực Mù Cang Chải,
-   ví dụ La Pán Tẩn, Chế Cu Nha, Dế Xu Phình, Tú Lệ, chợ phiên, đặc sản), đủ cột theo schema trong
+1. Tạo `data/poi.xlsx`, sheet tên `POI`, 5–10 dòng dữ liệu thật (tọa độ thật khu vực Sa Pa,
+   ví dụ Fansipan, Cát Cát, Tả Van, Mường Hoa, chợ Sa Pa, đặc sản), đủ cột theo schema trong
    CLAUDE.md (`id, name, category, commune, lat, lng, address, description, price_range, phone,
    best_season, image_url, rating`). Tạo bằng script Node một lần (dùng package `xlsx` để viết file)
    thay vì tay — dễ tái tạo và review dạng text trước khi ghi ra `.xlsx`.

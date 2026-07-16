@@ -1,4 +1,4 @@
-# Bản đồ số & Chatbot du lịch Mù Cang Chải
+# Bản đồ số & Chatbot du lịch Sa Pa
 
 Ứng dụng Next.js (App Router) gồm bản đồ tương tác (pan/zoom, marker theo loại điểm đến) và
 chatbot AI trả lời câu hỏi du khách dựa trên knowledge base Markdown trong repo. Chi tiết
@@ -10,7 +10,7 @@ quyết định kỹ thuật và spec đầy đủ xem tại [CLAUDE.md](CLAUDE.
 - Ô tìm kiếm POI dạng float (góc trên-trái), gợi ý autocomplete, bản đồ tự bay đến vị trí khi chọn.
 - Menu bật/tắt từng loại điểm (layer) dạng float (góc dưới-trái).
 - Panel chi tiết điểm đến khi click marker.
-- Chatbot "Chợ Mù" trả lời dựa trên `content/knowledge/*.md`, hiển thị nguồn đã dùng, render markdown.
+- Chatbot "Chợ Sapa" trả lời dựa trên `content/knowledge/*.md`, hiển thị nguồn đã dùng, render markdown.
 - Đăng nhập 1 tài khoản admin, session cookie JWT, middleware chặn toàn bộ route khi chưa đăng nhập.
 - Dữ liệu điểm đến (POI) biên tập bằng Excel, import vào app qua script.
 

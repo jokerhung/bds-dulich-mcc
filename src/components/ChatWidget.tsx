@@ -54,7 +54,7 @@ export default function ChatWidget({ hideHeader }: ChatWidgetProps = {}) {
   return (
     <div className="flex h-full min-h-0 flex-col border-l border-black/10">
       {!hideHeader && (
-        <div className="border-b border-black/10 p-3 font-semibold">Chợ Mù - Trợ lý du lịch</div>
+        <div className="border-b border-black/10 p-3 font-semibold">Chợ Sapa - Trợ lý du lịch</div>
       )}
 
       <div className="min-h-0 flex-1 space-y-3 overflow-y-auto p-3">
@@ -80,7 +80,7 @@ export default function ChatWidget({ hideHeader }: ChatWidgetProps = {}) {
             )}
           </div>
         ))}
-        {loading && <div className="text-sm text-black/40">Chợ Mù đang trả lời...</div>}
+        {loading && <div className="text-sm text-black/40">Chợ Sapa đang trả lời...</div>}
       </div>
 
       <div className="flex gap-2 border-t border-black/10 p-3">
@@ -91,7 +91,7 @@ export default function ChatWidget({ hideHeader }: ChatWidgetProps = {}) {
             if (e.key === "Enter") handleSend();
           }}
           disabled={loading}
-          placeholder="Hỏi về Mù Cang Chải..."
+          placeholder="Hỏi về Sa Pa..."
           className="flex-1 rounded border border-black/20 px-3 py-2 text-sm disabled:opacity-50"
         />
         <button

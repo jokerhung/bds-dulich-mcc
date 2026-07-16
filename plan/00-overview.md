@@ -1,4 +1,4 @@
-# Kế hoạch implement — Bản đồ số & Chatbot Mù Cang Chải
+# Kế hoạch implement — Bản đồ số & Chatbot Sa Pa
 
 Nguồn quyết định kỹ thuật: [CLAUDE.md](../CLAUDE.md). Kế hoạch này chia việc theo 6 giai đoạn,
 mỗi giai đoạn có checklist, file liên quan, và tiêu chí "xong". Thứ tự bám theo mục

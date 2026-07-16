@@ -1,26 +1,33 @@
 ---
-title: Đặc sản Mù Cang Chải
-tags: [dac-san, am-thuc, mon-an, dac-sac]
+title: Ăn uống và đặc sản Sa Pa
+tags: [dac-san, am-thuc, mon-an, an-gi, quan-an, ca-phe]
 ---
 
-# Đặc Sản Mù Cang Chải (Yên Bái) - Hương Vị Núi Rừng Tây Bắc
+# Ăn uống tại Sa Pa
 
-Mù Cang Chải không chỉ nổi tiếng với những thửa ruộng bậc thang kỳ vĩ mà còn sở hữu một nền ẩm thực vô cùng phong phú, mang đậm bản sắc văn hóa của đồng bào các dân tộc vùng cao.
+**Đồ nướng - món nhất định phải thử:** Đến Sa Pa phải ăn đồ nướng, món có mặt khắp nơi với nhiều loại: xiên thịt lợn, gà, rau củ cuốn, trứng, ngô, khoai, cơm lam... Giá chỉ từ 20.000 - 100.000 đồng mỗi loại, hợp với tiết trời se lạnh.
 
-## 1. Các món ăn đặc sản nhất định phải thử tại Mù Cang Chải
+**Cá hồi, cá tầm:** Được nuôi ngay tại vùng nước lạnh Sa Pa (như khu hồ Séo Mý Tỷ), nấu lẩu hoặc ăn sống (sashimi) đều được ưa chuộng. Một nồi lẩu giá 300.000 - 600.000 đồng, phù hợp cho 3 - 6 người ăn.
 
-*   **Cốm Tú Lệ:** Được làm từ giống nếp tan đặc sản tại thung lũng Tú Lệ. Hạt cốm có màu xanh ngọc, dẻo thơm và mang vị ngọt thanh tự nhiên.
-*   **Xôi ngũ sắc:** Món ăn truyền thống của người Thái. Xôi được nhuộm màu hoàn toàn tự nhiên từ các loại lá cây rừng (đỏ, tím, vàng, xanh, trắng), thường ăn kèm với gà đồi nướng.
-*   **Pa Pỉnh Tộp (Cá suối nướng):** Cá suối tươi được mổ dọc sống lưng, tẩm ướp với mắc khén, hạt dổi, gừng, sả và các loại rau thơm rồi gập đôi lại nướng trên than hồng.
-*   **Nhộng ong rừng:** Món ăn đặc sản vào mùa thu (khoảng tháng 8 - tháng 9). Nhộng ong béo ngậy thường được xào với lá chanh hoặc măng chua.
-*   **Mèn mén và Thắng cố:** Đây là hai món ăn mang đậm bản sắc của người H'Mông. Mèn mén là bột ngô tẻ đồ chín, còn Thắng cố là món canh nấu từ thịt và nội tạng ngựa/bò cùng nhiều loại gia vị đặc trưng.
-*   **Gà đen đồi:** Giống gà xương đen, thịt chắc, ít mỡ và rất thơm ngọt. Gà đen thường được nướng mật ong hoặc đem tần thuốc bắc để bồi bổ sức khỏe.
-*   **Cá hồi, cá tầm Khau Phạ:** Nhờ nguồn nước lạnh quanh năm dưới chân đèo Khau Phạ, các nhà hàng tại đây phục vụ lẩu cá hồi, cá tầm tươi sống rất ngon và chất lượng.
+**Các món đặc sản khác:** thắng cố (món truyền thống của người Mông), phở cốn sủi, lợn cắp nách, gà đen, rau cải mèo, su su - những món gắn liền với ẩm thực vùng cao Tây Bắc.
 
-## 2. Đặc sản Mù Cang Chải mua về làm quà
+## Quán ăn tham khảo
 
-*   **Thịt trâu gác bếp:** Thịt trâu tươi được chọn lọc kỹ, tẩm ướp gia vị Tây Bắc rồi hun khói bằng củi gỗ rừng. Khi ăn xé nhỏ chấm cùng chẩm chéo.
-*   **Mật ong rừng tự nhiên:** Mật ong được người dân bản địa khai thác trực tiếp từ rừng sâu, có màu vàng sậm, đặc sánh và mùi thơm nồng.
-*   **Lạp xưởng hun khói:** Lạp xưởng làm từ thịt lợn bản, nhồi thủ công và hun khói bằng bã mía cùng củi tạo nên hương vị đặc trưng, để được rất lâu.
-*   **Măng nứa và nấm hương rừng:** Được người dân hái trong rừng sâu rồi phơi khô tự nhiên. Đây là món quà rất thiết thực, dễ bảo quản và mang đậm hương vị núi rừng.
+- **Thắng cố A Quỳnh** (đường Thạch Sơn): chuyên thắng cố và các món đặc sản dân tộc.
+- **Hotpot Center** (đường Xuân Viên): các món lẩu cá hồi, cá tầm.
+- **Phở cốn sủi ông Há** (468 Điện Biên Phủ): món cốn sủi trứ danh.
+- **Mị Nướng** (đường Điện Biên Phủ): chuyên các món nướng than, không gian trẻ trung.
+- **Tiệm gà Túk Túk**: sườn cay nướng tảng, gà lắc phô mai.
+- **H'Mong Pizza** (ở Pi's Boutique): pizza kết hợp nguyên liệu bản địa như lạp xưởng H'Mông.
 
+## Quán cà phê view đẹp
+
+Trung tâm thị xã có rất nhiều quán cà phê; nếu muốn không gian yên tĩnh, view thung lũng hoặc núi rừng:
+
+- **Coóng Cafe** (trong homestay Coóng, đường đi bản Cát Cát)
+- **Viettrekking Cafe** (đường Hoàng Liên)
+- **Gem Valley Cafe** (bản Cát Cát)
+
+## Mua về làm quà
+
+Thổ cẩm và đồ thủ công của người Mông ở bản Cát Cát (dệt vải, chạm bạc, trang sức), thịt trâu gác bếp, rượu táo mèo, mận và đào theo mùa, các sản vật địa phương bán dọc đường đèo Ô Quy Hồ và tại các bản.

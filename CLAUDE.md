@@ -1,7 +1,7 @@
-# CLAUDE.md — Bản đồ số du lịch & Chatbot Mù Cang Chải
+# CLAUDE.md — Bản đồ số du lịch & Chatbot Sa Pa
 
 Tài liệu này hướng dẫn Claude Code (hoặc bất kỳ ai code tiếp) xây dựng ứng dụng Next.js
-gồm bản đồ kéo/zoom thật + chatbot AI cho du lịch Mù Cang Chải, Yên Bái.
+gồm bản đồ kéo/zoom thật + chatbot AI cho du lịch Sa Pa, Lào Cai.
 
 ## Mục tiêu sản phẩm
 
@@ -27,7 +27,7 @@ gồm bản đồ kéo/zoom thật + chatbot AI cho du lịch Mù Cang Chải, Y
 ## Cấu trúc thư mục
 
 ```
-mucangchai-app/
+sapa-app/
 ├── CLAUDE.md
 ├── package.json
 ├── next.config.js
@@ -137,7 +137,7 @@ Response: `{ data: Poi[] }`
 Body: `{ message: string, history: { role: "user" | "assistant", content: string }[] }`
 Xử lý:
 1. Gọi `lib/knowledge.ts` để lấy 3 đoạn kiến thức liên quan nhất tới `message`.
-2. Ghép thành system prompt: vai trò "Chợ Mù" + nội dung 3 file đó + hướng dẫn không bịa số liệu ngoài phạm vi.
+2. Ghép thành system prompt: vai trò "Chợ Sapa" + nội dung 3 file đó + hướng dẫn không bịa số liệu ngoài phạm vi.
 3. Gọi OpenAI SDK (`model: "gpt-4.1-mini"`, `temperature: 0.4`) với `messages: [{role:"system", content: systemPrompt}, ...history, {role:"user", content: message}]`.
 Response: `{ reply: string, sources: string[] }` — `sources` là tên các file .md đã dùng, để FE có thể hiển thị "Nguồn: mua-lua.md" nếu muốn.
 
@@ -167,9 +167,9 @@ SESSION_SECRET=...             # chuỗi ngẫu nhiên tối thiểu 32 ký tự
 
 ## Việc cần làm (thứ tự gợi ý cho Claude Code)
 
-1. Khởi tạo Next.js (App Router, TypeScript, Tailwind): `npx create-next-app@latest mucangchai-app --typescript --tailwind --app`
+1. Khởi tạo Next.js (App Router, TypeScript, Tailwind): `npx create-next-app@latest sapa-app --typescript --tailwind --app`
 2. Cài dependencies: `react-map-gl`, `mapbox-gl`, `xlsx`, `gray-matter`, `openai`, `bcryptjs`, `jose`
-3. Tạo `types/poi.ts`, `data/poi.xlsx` mẫu (5-10 dòng dữ liệu thật về Mù Cang Chải để test).
+3. Tạo `types/poi.ts`, `data/poi.xlsx` mẫu (5-10 dòng dữ liệu thật về Sa Pa để test).
 4. Viết `scripts/import-poi.ts`, thêm script `"import:poi"` vào `package.json`, chạy thử ra `data/poi.json`.
 5. Viết `scripts/hash-password.ts`, chạy để tạo `ADMIN_PASSWORD_HASH`, điền vào `.env.local` cùng `ADMIN_USERNAME` và `SESSION_SECRET`.
 6. Viết `lib/auth.ts` (verifyCredentials, signSession, verifySession), `app/api/auth/login/route.ts`, `app/api/auth/logout/route.ts`, `middleware.ts`.

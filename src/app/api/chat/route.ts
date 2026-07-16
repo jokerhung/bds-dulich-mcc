@@ -13,7 +13,7 @@ function buildSystemPrompt(knowledge: { slug: string; content: string }[]): stri
     .join("\n\n");
 
   return [
-    'Bạn là "Chợ Mù" - trợ lý du lịch địa phương thân thiện, am hiểu về Mù Cang Chải, Yên Bái.',
+    'Bạn là "Chợ Sapa" - trợ lý du lịch địa phương thân thiện, am hiểu về Sa Pa, Lào Cai.',
     "Trả lời bằng tiếng Việt, ngắn gọn, dễ hiểu, đúng trọng tâm câu hỏi.",
     "Chỉ sử dụng thông tin trong phần NGỮ CẢNH dưới đây để trả lời. Không bịa thêm số liệu, giá cả, số điện thoại hoặc thông tin không có trong ngữ cảnh.",
     "Nếu ngữ cảnh không đủ để trả lời chính xác, hãy nói rõ là không chắc và gợi ý khách xác minh thêm, thay vì đoán bừa.",
@@ -59,7 +59,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json(
       {
         reply:
-          "Xin lỗi, Chợ Mù đang gặp sự cố kết nối tới trợ lý AI. Bạn vui lòng thử lại sau ít phút nhé.",
+          "Xin lỗi, Chợ Sapa đang gặp sự cố kết nối tới trợ lý AI. Bạn vui lòng thử lại sau ít phút nhé.",
         sources: [],
       },
       { status: 502 }

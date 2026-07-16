@@ -1,14 +1,20 @@
 ---
-title: Lễ hội và sự kiện
-tags: [le-hoi, su-kien, cho-phien, tuan-van-hoa]
+title: Lễ hội và sự kiện tại Sa Pa
+tags: [le-hoi, su-kien, cho-tinh, gau-tao, van-hoa]
 ---
 
-**Tuần Văn hóa - Du lịch Mù Cang Chải:** Sự kiện thường niên được tổ chức vào mùa lúa chín (khoảng tháng 9 - tháng 10), quy tụ nhiều hoạt động: lễ hội văn hóa các dân tộc, chợ phiên, trải nghiệm dù lượn "Bay trên mùa vàng" ở khu vực đèo Khau Phạ, các gian hàng ẩm thực và sản vật địa phương. Đây là thời điểm đông khách du lịch nhất trong năm.
+Sa Pa là nơi sinh sống của nhiều dân tộc (Mông, Dao đỏ, Tày, Giáy, Xá Phó) nên có đời sống lễ hội rất phong phú:
 
-**Chợ phiên vùng cao:** Diễn ra vào cuối tuần (thường thứ Bảy, Chủ nhật) tại trung tâm thị trấn Mù Cang Chải và một số xã, là nơi bà con người Mông, người Thái mang nông sản, thổ cẩm, nông cụ ra trao đổi mua bán. Đây cũng là dịp tốt để du khách tìm hiểu đời sống, trang phục truyền thống của người dân bản địa.
+**Chợ tình Sa Pa:** Diễn ra vào tối thứ Bảy hàng tuần tại khu vực quảng trường trước nhà thờ đá. Xưa là nơi trai gái các dân tộc gặp gỡ, giao duyên qua tiếng khèn, tiếng sáo; nay trở thành hoạt động văn hóa - du lịch với các màn múa khèn, hát giao duyên phục vụ du khách.
 
-**Lễ hội truyền thống của người Mông:** lễ hội dù lượn Mù Cang Chải sẽ diễn ra hoạt động bay kéo dài từ ngày tháng 8 đến hết tháng 12 Hàng năm. Du khách có thể đăng ký trải nghiệm bay trong các khung giờ từ 6h00 đến 18h00 hàng ngày. Giá vé Ngày thường: 2.190.000₫/vé/khách Ngày cuối tuần (thứ 7 và CN hàng tuần): 2.590.000₫/ vé/ khách (Ngày lễ khác phụ thu 200.000₫/vé/khách) Ngày lễ diễn ra sự kiện Mùa vàng ( 15/09 - 17/09): 2.990.000₫/ vé/ khách. Liên hệ mua vé 0329961420
+**Lễ hội Gầu Tào (người Mông):** Tổ chức vào đầu xuân (khoảng tháng Giêng âm lịch) để cầu phúc, cầu mệnh. Có các trò chơi dân gian như đánh yến, ném pao, múa khèn, hát đối - dịp tốt để tìm hiểu văn hóa Mông.
 
-**Bay trên mùa vàng:** .
+**Lễ hội Roóng Poọc (người Giáy ở Tả Van):** Lễ hội xuống đồng vào ngày Thìn tháng Giêng âm lịch, cầu mùa màng bội thu, người yên vật thịnh, với nghi lễ kéo co, ném còn giữa cánh đồng thung lũng Mường Hoa.
 
-Vì các lễ hội gắn liền với mùa vụ và phong tục địa phương, ngày tổ chức chính xác từng năm có thể xê dịch - nên xác nhận lại lịch cụ thể trước khi lên kế hoạch.
+**Tết nhảy (người Dao đỏ ở Tả Van, Tả Phìn):** Diễn ra dịp Tết Nguyên đán, là nghi lễ quan trọng nhất của người Dao đỏ với các điệu nhảy dâng lễ tổ tiên kéo dài suốt ngày đêm.
+
+**Lễ hội trên mây và các sự kiện du lịch:** Thị xã Sa Pa và khu du lịch Sun World Fansipan Legend thường tổ chức các mùa lễ hội theo chủ đề trong năm (lễ hội hoa đỗ quyên khoảng tháng 4 - 5, lễ hội mùa vàng dịp lúa chín tháng 9, các sự kiện văn hóa dịp lễ 30/4, 2/9, Giáng sinh - Tết dương lịch...).
+
+**Chợ phiên vùng cao quanh Sa Pa:** Ngoài chợ Sa Pa họp hàng ngày, du khách có thể kết hợp đi các chợ phiên nổi tiếng của Lào Cai như chợ Bắc Hà (Chủ nhật), chợ Cán Cấu (thứ Bảy), chợ Mường Hum (Chủ nhật) - nơi bà con mang thổ cẩm, nông sản, gia súc xuống trao đổi, rất giàu bản sắc.
+
+Vì các lễ hội gắn với mùa vụ và lịch âm, ngày tổ chức chính xác từng năm có thể xê dịch - nên xác nhận lại lịch cụ thể trước khi lên kế hoạch.

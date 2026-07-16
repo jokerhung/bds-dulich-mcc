@@ -7,14 +7,13 @@ không gọi API ngoài để tra cứu (chỉ gọi OpenAI-compatible API để
 ## Việc làm
 
 1. Viết 6 file trong `content/knowledge/` (frontmatter `title` + `tags`, nội dung tiếng Việt tự do,
-   dựa trên kiến thức thật về Mù Cang Chải):
+   dựa trên kiến thức thật về Sa Pa):
    - `mua-lua.md` — mùa nước đổ (tháng 5–6), mùa lúa chín (tháng 9–10), thời điểm đẹp nhất chụp ảnh.
    - `duong-di.md` — cách di chuyển từ Hà Nội (~280km, QL32 qua Tú Lệ hoặc qua Nghĩa Lộ), xe khách/xe máy,
      tình trạng đường vào mùa mưa.
    - `homestay-va-luu-tru.md` — các khu vực homestay phổ biến (La Pán Tẩn, Chế Cu Nha...), mức giá tham khảo,
      lưu ý đặt phòng mùa cao điểm.
-   - `le-hoi-va-su-kien.md` — Tuần lễ Văn hóa Du lịch Mù Cang Chải (mùa lúa chín), chợ phiên, lễ hội của
-     người Mông.
+   - `le-hoi-va-su-kien.md` — chợ tình Sa Pa, lễ hội Gầu Tào, Roóng Poọc, Tết nhảy, chợ phiên vùng cao.
    - `dac-san.md` — đặc sản (xôi ngũ sắc, cơm lam, gà đen, rượu ngô...).
    - `tong-quan.md` — file fallback: tóm tắt ngắn gọn tất cả các mục trên, dùng khi không có file nào khớp
      điểm số truy hồi.
@@ -38,7 +37,7 @@ không gọi API ngoài để tra cứu (chỉ gọi OpenAI-compatible API để
 4. `src/app/api/chat/route.ts` (POST):
    - Parse body `{ message: string, history: {role, content}[] }`.
    - `const relevant = getRelevantKnowledge(message)`.
-   - Build system prompt: vai trò "Chợ Mù" (trợ lý du lịch địa phương, thân thiện, trả lời tiếng Việt),
+   - Build system prompt: vai trò "Chợ Sapa" (trợ lý du lịch địa phương, thân thiện, trả lời tiếng Việt),
      nối nội dung các file liên quan, kèm hướng dẫn rõ: chỉ trả lời trong phạm vi kiến thức được cung cấp,
      không bịa số liệu/giá/số điện thoại không có trong ngữ cảnh, nếu không biết thì nói không chắc và gợi ý
      hỏi thêm nguồn khác.
@@ -48,7 +47,7 @@ không gọi API ngoài để tra cứu (chỉ gọi OpenAI-compatible API để
    - Thành công → trả `{ reply: completion.choices[0].message.content, sources: relevant.map(r => r.slug) }`.
 
 ## Tiêu chí xong
-- Hỏi "mùa nào đẹp nhất để đi Mù Cang Chải?" → `sources` chứa `mua-lua`, reply có nội dung liên quan.
+- Hỏi "mùa nào đẹp nhất để đi Sa Pa?" → `sources` chứa `mua-lua`, reply có nội dung liên quan.
 - Hỏi câu không liên quan gì tới các file (ví dụ "giá vàng hôm nay") → vẫn trả lời được nhờ fallback
   `tong-quan.md`, không lỗi 500.
 - Set `OPENAI_API_KEY` sai/rút mạng → gọi `/api/chat` trả message tiếng Việt dễ hiểu, không lộ chi tiết lỗi SDK.
