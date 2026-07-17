@@ -6,7 +6,8 @@
       "Bash(rm -rf _scaffold_tmp)",
       "Bash(npx --yes create-next-app@latest _scaffold_tmp --typescript --tailwind --app --eslint --src-dir --import-alias \"@/*\" --use-npm)",
       "Bash(rm -rf scaffold-tmp)",
-      "Bash(npx --yes create-next-app@latest scaffold-tmp --typescript --tailwind --app --eslint --src-dir --import-alias \"@/*\" --use-npm)"
+      "Bash(npx --yes create-next-app@latest scaffold-tmp --typescript --tailwind --app --eslint --src-dir --import-alias \"@/*\" --use-npm)",
+      "Bash(python3 -c \"import json; d=json.load\\(open\\('data/poi.json'\\)\\); print\\(len\\(d\\)\\); print\\(sum\\(1 for x in d if x['category']=='nha_hang'\\)\\)\")"
     ]
   }
 }

@@ -8,6 +8,7 @@ const nextConfig: NextConfig = {
   outputFileTracingIncludes: {
     "/api/chat": ["./content/knowledge/**/*"],
   },
+  allowedDevOrigins: ["*.ngrok-free.app","*.trycloudflare.com"],
 };
 
 export default nextConfig;

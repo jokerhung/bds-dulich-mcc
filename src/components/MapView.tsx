@@ -1,9 +1,9 @@
 "use client";
 
-import { Fragment, useEffect, useRef, useState } from "react";
+import { Fragment, useRef, useState } from "react";
 import { Map, Marker, Popup, type MapRef } from "react-map-gl/mapbox";
 import type { Poi } from "@/types/poi";
-import { CATEGORY_COLORS } from "@/lib/categoryColors";
+import { CATEGORY_COLORS, CATEGORY_LABELS } from "@/lib/categoryColors";
 
 // Từ mức zoom này trở lên mới hiện tên địa điểm dưới marker, tránh rối bản đồ khi zoom xa.
 const LABEL_MIN_ZOOM = 13;
@@ -74,16 +74,6 @@ export default function MapView({ pois, selectedPoi, onSelectPoi }: MapViewProps
   // Chỉ tính một lần lúc mount — initialViewState không có tác dụng sau khi map đã khởi tạo.
   const [initialViewState] = useState(() => computeInitialViewState(pois));
 
-  useEffect(() => {
-    if (selectedPoi) {
-      mapRef.current?.flyTo({
-        center: [selectedPoi.lng, selectedPoi.lat],
-        zoom: 14,
-        duration: 800,
-      });
-    }
-  }, [selectedPoi]);
-
   if (!MAP_CONFIG.accessToken) {
     return (
       <div className="flex h-full w-full items-center justify-center bg-black/5 p-6 text-center text-sm text-black/60">
@@ -128,8 +118,61 @@ export default function MapView({ pois, selectedPoi, onSelectPoi }: MapViewProps
           latitude={selectedPoi.lat}
           onClose={() => onSelectPoi(null)}
           offset={12}
+          maxWidth="280px"
+          closeButton={false}
         >
-          <span className="text-sm font-medium">{selectedPoi.name}</span>
+          <div className="w-64 max-w-full">
+            <div className="flex items-start justify-between gap-2">
+              <h3 className="text-sm font-semibold">{selectedPoi.name}</h3>
+              <button
+                onClick={() => onSelectPoi(null)}
+                className="text-black/50 hover:text-black"
+                aria-label="Đóng"
+              >
+                ×
+              </button>
+            </div>
+
+            {selectedPoi.image_url && (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                src={selectedPoi.image_url}
+                alt={selectedPoi.name}
+                className="mt-2 h-28 w-full rounded object-cover"
+              />
+            )}
+
+            <p className="mt-1 text-xs text-black/60">{CATEGORY_LABELS[selectedPoi.category]}</p>
+
+            {selectedPoi.address && <p className="mt-1 text-xs">{selectedPoi.address}</p>}
+            {selectedPoi.description && (
+              <p className="mt-1 text-xs text-black/80">{selectedPoi.description}</p>
+            )}
+            {selectedPoi.price_range && (
+              <p className="mt-1 text-xs">
+                <span className="font-medium">Giá: </span>
+                {selectedPoi.price_range}
+              </p>
+            )}
+            {selectedPoi.phone && (
+              <p className="mt-1 text-xs">
+                <span className="font-medium">Điện thoại: </span>
+                {selectedPoi.phone}
+              </p>
+            )}
+            {selectedPoi.best_season && (
+              <p className="mt-1 text-xs">
+                <span className="font-medium">Mùa đẹp nhất: </span>
+                {selectedPoi.best_season}
+              </p>
+            )}
+            {selectedPoi.rating !== undefined && (
+              <p className="mt-1 text-xs">
+                <span className="font-medium">Đánh giá: </span>
+                {selectedPoi.rating}/5
+              </p>
+            )}
+          </div>
         </Popup>
       )}
     </Map>

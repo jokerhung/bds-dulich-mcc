@@ -5,7 +5,6 @@ import { useRouter } from "next/navigation";
 import type { Poi, PoiCategory } from "@/types/poi";
 import MapView from "./MapView";
 import MapLegend from "./MapLegend";
-import PoiDetailCard from "./PoiDetailCard";
 import PoiSearchBox from "./PoiSearchBox";
 import ChatWidget from "./ChatWidget";
 
@@ -58,7 +57,6 @@ export default function MapPageClient({ pois }: MapPageClientProps) {
           activeCategories={activeCategories}
           onToggleCategory={handleToggleCategory}
         />
-        <PoiDetailCard poi={selectedPoi} onClose={() => setSelectedPoi(null)} />
       </div>
 
       <div className="flex min-h-0 w-96 flex-col">
